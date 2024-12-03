@@ -14,12 +14,12 @@ public class Link {
 
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private Double id;
+	private Long id;
 	private String urlLong;
 	private String urlEncurtada;
 	private LocalDateTime urlCreatedOn;
 		
-	public Link(Double id, String urlLong, String urlEncurtada, LocalDateTime urlCreatedOn) {
+	public Link(Long id, String urlLong, String urlEncurtada, LocalDateTime urlCreatedOn) {
 		super();
 		this.id = id;
 		this.urlLong = urlLong;
@@ -27,15 +27,15 @@ public class Link {
 		this.urlCreatedOn = urlCreatedOn;
 	}
 	
-	public Link(Double id) {
+	public Link(Long id) {
 		this.id = id;
 		
 		
 	}
-	public Double getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Double id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUrlLong() {

@@ -5,22 +5,22 @@ import java.time.LocalDateTime;
 public class LinkResponse {
 	
 	
-	private Double id;
+	private Long id;
 	private String urlLong;
 	private String urlEncurtada;
 	private LocalDateTime urlCreatedOn;
 	
-	public LinkResponse(Double id, String urlLong, String urlEncurtada, LocalDateTime urlCreatedOn) {
+	public LinkResponse(Long id, String urlLong, String urlEncurtada, LocalDateTime urlCreatedOn) {
 		super();
 		this.id = id;
 		this.urlLong = urlLong;
 		this.urlEncurtada = urlEncurtada;
 		this.urlCreatedOn = urlCreatedOn;
 	}
-	public Double getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Double id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getUrlLong() {
